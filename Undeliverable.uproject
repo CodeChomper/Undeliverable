@@ -3,16 +3,17 @@
 	"EngineAssociation": "5.0",
 	"Category": "",
 	"Description": "",
-	"Plugins": [
+	"Modules": [
 		{
-			"Name": "Bridge",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Mac",
-				"Linux"
+			"Name": "Undeliverable",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
 			]
-		},
+		}
+	],
+	"Plugins": [
 		{
 			"Name": "OculusVR",
 			"Enabled": false,
@@ -39,6 +40,10 @@
 		},
 		{
 			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "FieldSystemPlugin",
 			"Enabled": true
 		}
 	]
